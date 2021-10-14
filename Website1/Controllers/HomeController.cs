@@ -29,7 +29,7 @@ namespace Website1.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(User user)
+        public ActionResult Register(user user)
         {
             return View();
         }
