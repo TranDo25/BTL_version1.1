@@ -28,7 +28,7 @@ namespace Website1.Models
         public int discount { get; set; }
 
         [Required]
-        public int finnal_price { get; set; }
+        public int final_price { get; set; }
 
         [Required]
         public int pro_quantity { get; set; }

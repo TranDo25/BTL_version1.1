@@ -7,17 +7,18 @@ using System.Web;
 
 namespace Website1.Models
 {
+    [Table("admins")]
     public class admin
 
     {
-        [Key, Column(Order = 1)]
+        [Key, Column(Order = 0)]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
         [Required]
         public String name { get; set; }
 
-        [Key]
+        [Key, Column(Order = 1)]
         [Required]
         public String email { get; set; }
 
